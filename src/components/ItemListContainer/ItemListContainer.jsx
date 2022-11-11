@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import CardComponent from "../CardComponent/CardComponent";
+import ItemList from "../ItemList/ItemList";
 
 export let URL = "/productos.json";
 
@@ -36,14 +36,7 @@ const ItemListContainer = () => {
     " "
   ) : (
     <div className="row text-center">
-      <div className="d-flex flex-row flex-wrap justify-content-center">
-        {products.map((obj) => (
-          <CardComponent
-            obj={obj}
-            key={obj.id}
-          />
-        ))}
-      </div>
+      <ItemList products={products} />
     </div>
   );
 };
