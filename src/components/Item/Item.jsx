@@ -13,7 +13,7 @@ function CardComponent({obj}) {
       </Card.Text>
     </Card.Body>
     <Card.Footer>
-    15% OFF efect y transf
+    15% OFF efecto y transf
     </Card.Footer>
     </Card>
   </Link>
