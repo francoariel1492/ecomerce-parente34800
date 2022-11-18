@@ -1,27 +1,31 @@
-import NavBar from "./components/NavBar/NavBar";
+//------- Componentes
+import Header from "./components/Header/Header";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer";
+import Cart from "./pages/Cart/Cart";
+import CartContextProvider from "./context/CartContext";
+//------- CSS
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Bienvenida from "./components/Bienvenida/Bienvenida";
-import LoginSignIn from "./components/LoginSignIn/LoginSignIn";
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import CartWidget from "./components/CartWidget/CartWidget";
 import "./App.css";
+//------- Librerias
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
-      <Bienvenida />
-      <LoginSignIn />
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<ItemListContainer />} />
-        <Route path="/inicio" />
-        <Route path="/detail/:productId" element={<ItemDetailContainer/>}/>
-        <Route path="/categoria/:categoriaId" element={<ItemListContainer />} />
-        <Route path="/categoria" element={<ItemListContainer />} />
-        <Route path="/cart" element={<CartWidget />} />
-      </Routes>
+      <CartContextProvider>
+        <Header />
+        <Routes>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/inicio" />
+          <Route path="/detail/:productId" element={<ItemDetailContainer />} />
+          <Route
+            path="/categoria/:categoriaId"
+            element={<ItemListContainer />}
+          />
+          <Route path="/cart" element={<Cart />} />
+        </Routes>
+      </CartContextProvider>
     </BrowserRouter>
   );
 }

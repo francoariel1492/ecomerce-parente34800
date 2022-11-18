@@ -1,8 +1,7 @@
-import { useEffect } from 'react'
-import { useState } from 'react'
+import ItemDetail from '../../components/ItemDetail/ItemDetail'
+import { URL } from '../../components/ItemListContainer/ItemListContainer'
+import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import ItemDetail from '../ItemDetail/ItemDetail'
-import { URL } from '../ItemListContainer/ItemListContainer'
 
 const ItemDetailContainer = () => {
   const [item,setItem] = useState([]);

@@ -1,10 +1,7 @@
 import { FaShoppingCart } from "react-icons/fa";
 
-
 const CartWidget = () => {
-  return (
-    <FaShoppingCart/> 
-  )
-}
+  return <FaShoppingCart />;
+};
 
-export default CartWidget
+export default CartWidget;

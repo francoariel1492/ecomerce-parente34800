@@ -1,7 +1,10 @@
+//------- Componentes
+import CartWidget from "../CartWidget/CartWidget";
+
+//------- Librerias
 import { Container } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import CartWidget from "../CartWidget/CartWidget";
 
 const LoginSignIn = () => {
   return (

@@ -1,7 +1,9 @@
-import { useState } from "react";
-import { useParams } from "react-router-dom";
-import { useEffect } from "react";
+//------- Componentes
 import ItemList from "../ItemList/ItemList";
+//------- Hooks
+import { useState, useEffect } from "react";
+//------- Librerias
+import { useParams } from "react-router-dom";
 
 export let URL = "/productos.json";
 
