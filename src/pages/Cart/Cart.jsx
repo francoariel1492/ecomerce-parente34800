@@ -3,11 +3,12 @@ import { useCartContext } from "../../context/CartContext";
 
 const Cart = () => {
   const { cartList, borrarCarrito } = useCartContext();
-
+  
   return (
     <div className="text-center">
       <h1>Tus Ordenes</h1>
-      <ul>
+      <>{console.log(cartList)}</>
+      <ul className="justify-content-center">
         {cartList.map((product) => (
           <li
             key={product.id}
@@ -17,7 +18,7 @@ const Cart = () => {
               <Card.Img variant="top" src={`${product.img[0]}`} />
             </Card>
             <h5 className="lead fs-4">
-              Nombre: {product.name} - Precio: ${product.price} - Cantidad:{" "}
+              Nombre: {product.name} - Precio: ${product.price * product.cantidad} - Cantidad:{" "}
               {product.cantidad}
             </h5>
           </li>

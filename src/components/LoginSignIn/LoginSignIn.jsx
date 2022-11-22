@@ -5,8 +5,11 @@ import CartWidget from "../CartWidget/CartWidget";
 import { Container } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useCartContext } from "../../context/CartContext";
 
 const LoginSignIn = () => {
+  
+  const { sumTotal,cantidadItems } = useCartContext();
   return (
     <Container className="d-flex flex-row align-items-center justify-content-between">
       <div className="d-flex align-items-center">
@@ -18,7 +21,7 @@ const LoginSignIn = () => {
         <Link to="/cart">
           <CartWidget />
         </Link>
-        <div>0 - $0.00</div>
+        <div className="px-2">{cantidadItems}  -  ${sumTotal}</div>
         <FaFacebookF />
         <FaInstagram />
       </div>
