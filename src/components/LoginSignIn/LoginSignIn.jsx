@@ -22,8 +22,12 @@ const LoginSignIn = () => {
           <CartWidget />
         </Link>
         <div className="px-2">{cantidadItems}  -  ${sumTotal}</div>
+        <a href="https://facebook.com/morowa.indumentaria">
         <FaFacebookF />
+        </a>
+        <a href="https://www.instagram.com/morowa.indumentaria">
         <FaInstagram />
+        </a>
       </div>
     </Container>
   );

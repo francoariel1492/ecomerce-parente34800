@@ -5,16 +5,17 @@ import { useCartContext } from "../../context/CartContext";
 //------- Librerias
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FaCalculator } from "react-icons/fa";
-
 
 const ItemDetail = ({ item }) => {
-  const { agregarAlCarrito,calcularTotal,calcularCantidadItems} = useCartContext();
+  const { agregarAlCarrito, calcularTotal, calcularCantidadItems } =
+    useCartContext();
 
   const onAdd = (cantidad) => {
     agregarAlCarrito({ ...item, cantidad });
-    calcularTotal(item,cantidad)
-    calcularCantidadItems(cantidad)
+    calcularTotal(item, cantidad);
+    calcularCantidadItems(cantidad);
+    
+
   };
 
   return (

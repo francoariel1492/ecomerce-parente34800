@@ -1,41 +1,48 @@
 import { createContext, useState, useContext } from "react";
-import Item from "../components/Item/Item";
 
 const CartContext = createContext([]);
 
 export const useCartContext = () => useContext(CartContext);
 
 const CartContextProvider = ({ children }) => {
-
   const [cartList, setCartList] = useState([]);
-  const [sumTotal,setTotal] = useState(0)
-  const [cantidadItems,setQuantity] = useState(0)
+  const [sumTotal, setTotal] = useState(0);
+  const [cantidadItems, setQuantity] = useState(0);
 
   const agregarAlCarrito = (newProductCart) => {
-    setCartList([...cartList, newProductCart]);
+    if(!isInCart(newProductCart.id)){
+        setCartList([...cartList, newProductCart]);
+      }else{
+        let itemSelected = cartList.find(el => el.id === newProductCart.id)
+        itemSelected.cantidad += newProductCart.cantidad
+      }
   };
 
-  const calcularTotal = (newProductCart,cantidad) =>{
-    setTotal((newProductCart.price * cantidad) + sumTotal)
+  const calcularTotal = (newProductCart, cantidad) => {
+    setTotal(newProductCart.price * cantidad + sumTotal);
   };
 
-  const calcularCantidadItems = (cantidad) =>{
-    setQuantity(cantidad + cantidadItems)
+  const calcularCantidadItems = (cantidad) => {
+    setQuantity(cantidad + cantidadItems);
+  };
+
+  const isInCart = (id) => {
+    return cartList.some(el => el.id === id)
   }
-
-
 
   const borrarCarrito = () => {
     setCartList([]);
-    setTotal(0)
+    setTotal(0);
+    setQuantity(0);
   };
-  
+
   return (
     <CartContext.Provider
       value={{
         cartList,
         sumTotal,
         cantidadItems,
+        isInCart,
         calcularTotal,
         calcularCantidadItems,
         agregarAlCarrito,
