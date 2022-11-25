@@ -1,7 +1,8 @@
+import { memo } from "react";
 import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-const Item = ({ obj }) => {
+const Item = memo(({ obj }) => {
   return (
     <Link to={`/detail/${obj.id}`} className="p-3 ">
       <Card className="card" style={{ width: "22rem" }}>
@@ -14,6 +15,6 @@ const Item = ({ obj }) => {
       </Card>
     </Link>
   );
-};
+})
 
 export default Item;

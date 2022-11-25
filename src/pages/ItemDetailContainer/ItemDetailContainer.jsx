@@ -35,7 +35,7 @@ const ItemDetailContainer = () => {
     loading ? (
       " "
     ) :   
-    <div className='text-center'>
+    <div className='text-center '>
       <ItemDetail item={item}/>
     </div>
   )

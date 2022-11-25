@@ -4,4 +4,4 @@ import App from './App'
 import { initFirestore } from './firebase/config'
 
 initFirestore()
-ReactDOM.createRoot(document.getElementById('root')).render(<App />)
+ReactDOM.createRoot(document.getElementById('root')).render(<App/>)

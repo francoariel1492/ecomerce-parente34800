@@ -4,6 +4,7 @@ import ItemList from "../ItemList/ItemList";
 import { useState, useEffect } from "react";
 //------- Librerias
 import { useParams } from "react-router-dom";
+import { Spinner } from "react-bootstrap";
 
 export let URL = "/productos.json";
 
@@ -35,9 +36,9 @@ const ItemListContainer = () => {
   }, [categoriaId]);
 
   return loading ? (
-    " "
+    <div className="d-flex justify-content-center "><Spinner/></div>
   ) : (
-    <div className="row text-center">
+    <div className="col text-center">
       <ItemList products={products} />
     </div>
   );

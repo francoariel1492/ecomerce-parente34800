@@ -14,8 +14,6 @@ const ItemDetail = ({ item }) => {
     agregarAlCarrito({ ...item, cantidad });
     calcularTotal(item, cantidad);
     calcularCantidadItems(cantidad);
-    
-
   };
 
   return (
@@ -43,9 +41,9 @@ const ItemDetail = ({ item }) => {
         <h2 className="display-5">{item.name}</h2>
         <h2 className="display-5">${item.price}</h2>
         <p className="lead fs-3">{item.detail}</p>
-        <div>
+        <>
           <Contador stock={10} initial={1} onAdd={onAdd} />
-        </div>
+        </>
       </div>
     </div>
   );

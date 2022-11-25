@@ -18,6 +18,12 @@ const CartContextProvider = ({ children }) => {
       }
   };
 
+  const eliminarDelCarrito = (item)=>{
+    setQuantity(cantidadItems - item.cantidad)
+    setTotal(sumTotal - (item.cantidad * item.price))
+    setCartList(cartList.filter(el => el.id !== item.id))
+  }
+  
   const calcularTotal = (newProductCart, cantidad) => {
     setTotal(newProductCart.price * cantidad + sumTotal);
   };
@@ -46,6 +52,7 @@ const CartContextProvider = ({ children }) => {
         calcularTotal,
         calcularCantidadItems,
         agregarAlCarrito,
+        eliminarDelCarrito,
         borrarCarrito,
       }}
     >
