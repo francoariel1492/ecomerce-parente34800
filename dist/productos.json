@@ -1,0 +1,236 @@
+[
+    {
+        "id": 1,
+        "name": "Blusa Astik",
+        "category": "blusas",
+        "stock": 100,
+        "price": 6590,
+        "img": ["/cardimg/Blusas/BlusaAstik1.jpeg","/cardimg/Blusas/BlusaAstik2.jpeg"],
+        "detail": "Blusa de seda estampada, amplia.Talle L/XL/XXL Color: verde CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 2,
+        "name": "Blusa Far",
+        "category": "blusas",
+        "stock": 100,
+        "price": 6590,
+        "img": ["/cardimg/Blusas/BlusaFar1.jpeg","/cardimg/Blusas/BlusaFar2.jpeg","/cardimg/Blusas/BlusaFar3.jpeg","/cardimg/Blusas/BlusaFar4.jpeg"],
+        "detail": "Blusa cuello amplio con detalle. Colores: Verde. negro. blanco. celeste. rosa CONSULTAR DISONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 3,
+        "name": "Blusa Lazo",
+        "category": "blusas",
+        "stock": 100,
+        "price": 4800,
+        "img": ["/cardimg/Blusas/BlusaLazo1.jpeg","/cardimg/Blusas/BlusaLazo2.jpeg","/cardimg/Blusas/BlusaLazo3.jpeg"],
+        "detail": "Blusa de lino, lazo. Talle úico. Colores: Beige - rosa viejo - azul - Aqua CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 4,
+        "name": "Blusa Lu",
+        "category": "blusas",
+        "stock": 100,
+        "price": 6590,
+        "img": ["/cardimg/Blusas/BlusaLu1.jpeg","/cardimg/Blusas/BlusaLu2.jpeg"],
+        "detail": "Blusa en seda, amplia. Talle L/ XL/ XXL. colores: Rojo CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 5,
+        "name": "Blusa Mono",
+        "category": "blusas",
+        "stock": 100,
+        "price": 4890,
+        "img": ["/cardimg/Blusas/BlusaMono1.jpeg","/cardimg/Blusas/BlusaMono2.jpeg"],
+        "detail": "Blusa de lino con moños. Talle único. Colores: Rojo - beige - negro . blanco- celeste . aqua. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 6,
+        "name": "Top Lizzie",
+        "category": "blusas",
+        "stock": 100,
+        "price": 3350,
+        "img": ["/cardimg/Blusas/TopLizzie1.jpeg","/cardimg/Blusas/TopLizzie2.jpeg","/cardimg/Blusas/TopLizzie3.jpeg","/cardimg/Blusas/TopLizzie4.jpeg"],
+        "detail": "Top poplin liso. Talle s/M/L. Colores; Negro - Rojo. CONSULTAR DISONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 7,
+        "name": "Camisa Amalia",
+        "category": "camisas",
+        "stock": 100,
+        "price": 6690,
+        "img": ["/cardimg/Camisas/CamisaAmalia1.jpeg","/cardimg/Camisas/CamisaAmalia2.jpeg","/cardimg/Camisas/CamisaAmalia3.jpeg","/cardimg/Camisas/CamisaAmalia4.jpeg"],
+        "detail": "Camisa en lino, botones de nácar. cuello con puntilla, mangas 3/4 con eslástico. Talle M/L. Colores: Beige - Blanco - Negro. CONSULTAR POR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 8,
+        "name": "Camisa Bari",
+        "category": "camisas",
+        "stock": 100,
+        "price": 4990,
+        "img": ["/cardimg/Camisas/CamisaBari1.jpeg"],
+        "detail": "Camisa en lino de algodón rústica, botones en madera. Talle único: s y m. Colores disponibles: Negro - Natural. CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 9,
+        "name": "Camisa Faith",
+        "category": "camisas",
+        "stock": 100,
+        "price": 6490,
+        "img": ["/cardimg/Camisas/CamisaFaith1.jpeg","/cardimg/Camisas/CamisaFaith2.jpeg"],
+        "detail": "Camisa blanca, con detalle en cuello. Talle único: entre S y M. CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 10,
+        "name": "Camisa Frankie",
+        "category": "camisas",
+        "stock": 100,
+        "price": 6490,
+        "img": ["/cardimg/Camisas/CamisaFrankie1.jpeg","/cardimg/Camisas/CamisaFrankie2.jpeg","/cardimg/Camisas/CamisaFrankie3.jpeg"],
+        "detail": "Camisa blanca con cuello,Poplin elastizado Talle único: Entre s y m Colores: Blanco. CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 11,
+        "name": "Camisa Lai",
+        "category": "camisas",
+        "stock": 100,
+        "price": 6590,
+        "img": ["/cardimg/Camisas/CamisaLai1.jpeg","/cardimg/Camisas/CamisaLai2.jpeg","/cardimg/Camisas/CamisaLai3.jpeg"],
+        "detail": "Camisa en poplin elastizado Color: Celeste Talle : M CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 12,
+        "name": "Camisa Ranko",
+        "category": "camisas",
+        "stock": 100,
+        "price": 5890,
+        "img": ["/cardimg/Camisas/CamisaRanko1.jpeg"],
+        "detail": "Camisa Ranko, en lino. Talle único: s y m. Colores disponibles: Hueso. CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 13,
+        "name": "Camisa Scaled",
+        "category": "camisas",
+        "stock": 100,
+        "price": 5690,
+        "img": ["/cardimg/Camisas/CamisaScaled1.jpeg","/cardimg/Camisas/CamisaScaled2.jpeg","/cardimg/Camisas/CamisaScaled3.jpeg","/cardimg/Camisas/CamisaScaled4.jpeg"],
+        "detail": "Camisa de lino otoñal, larga. Talle M, L. Colores: Natural, Beige, Negro. CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 14,
+        "name": "Kimono Rafi",
+        "category": "camisas",
+        "stock": 100,
+        "price": 6590,
+        "img": ["/cardimg/Camisas/KimonoRafi1.jpeg","/cardimg/Camisas/KimonoRafi2.jpeg","/cardimg/Camisas/KimonoRafi3.jpeg"],
+        "detail": "Kimono de lino estampado. Talle único. colores: Verde - negro - beige - natural. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 15,
+        "name": "Kimono Zariah",
+        "category": "camisas",
+        "stock": 100,
+        "price": 4999,
+        "img": ["/cardimg/Camisas/KimonoZariah1.jpeg"],
+        "detail": "Kimono en lino con lazo. Talle único. Color, terracota - Beige. CONSULTAR DISPOIBILIDAD DE STOCK"
+    },
+    {
+        "id": 16,
+        "name": "Jeans Gretta",
+        "category": "pantalones",
+        "stock": 100,
+        "price": 7790,
+        "img": ["/cardimg/Pantalones/JeansGretta1.jpeg","/cardimg/Pantalones/JeansGretta2.jpeg","/cardimg/Pantalones/JeansGretta3.jpeg"],
+        "detail": "Jeaan Mom. Con elástico. Talle: 36 - 38 - 40. CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 17,
+        "name": "Pantalon Ava",
+        "category": "pantalones",
+        "stock": 100,
+        "price": 8790,
+        "img": ["/cardimg/Pantalones/PantalonAva1.jpeg","/cardimg/Pantalones/PantalonAva2.jpeg"],
+        "detail": "Pantalón sastrero con cintura elastica. Talle: 1. 2 y 3. Colores: Marrón. negro. natural. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 18,
+        "name": "Pantalon Edin",
+        "category": "pantalones",
+        "stock": 100,
+        "price": 5590,
+        "img": ["/cardimg/Pantalones/PantalonEdin1.jpeg","/cardimg/Pantalones/PantalonEdin2.jpeg","/cardimg/Pantalones/PantalonEdin3.jpeg","/cardimg/Pantalones/PantalonEdin4.jpeg","/cardimg/Pantalones/PantalonEdin5.jpeg"],
+        "detail": "Pantalón en poplin liso, cintura elástica y bolsillos. Talle M/ L. Colores: Negro - Rojo. CONSULTAR DISPONIBIIDAD DE STOCK"
+    },
+    {
+        "id": 19,
+        "name": "Short Saravejo",
+        "category": "pantalones",
+        "stock": 100,
+        "price": 4890,
+        "img": ["/cardimg/Pantalones/ShortSaravejo1.jpeg","/cardimg/Pantalones/ShortSaravejo2.jpeg"],
+        "detail": "Pantalón con elasticos. talle M. Color disponible : verde menta. COSNULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 20,
+        "name": "Remera Florecer",
+        "category": "remeras",
+        "stock": 100,
+        "price": 3390,
+        "img": ["/cardimg/Remeras/RemeraFlorecer1.jpeg","/cardimg/Remeras/RemeraFlorecer2.jpeg","/cardimg/Remeras/RemeraFlorecer3.jpeg","/cardimg/Remeras/RemeraFlorecer4.jpeg"],
+        "detail": "Remera algodón bordada. talle M y L. Color: Blanco - Negro. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 21,
+        "name": "Remera Jess",
+        "category": "remeras",
+        "stock": 100,
+        "price": 2790,
+        "img": ["/cardimg/Remeras/RemeraJess1.jpeg","/cardimg/Remeras/RemeraJess2.jpeg"],
+        "detail": "Remera cruzada de morley gamuzado, Talle M/L. Colores: negro. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 22,
+        "name": "Remera Jimena",
+        "category": "remeras",
+        "stock": 100,
+        "price": 3350,
+        "img": ["/cardimg/Remeras/RemeraJimena1.jpeg","/cardimg/Remeras/RemeraJimena2.jpeg"],
+        "detail": "Remera en morley gamuzado. Talle unico / M. Colores: Negro - Blanco - Beige. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 23,
+        "name": "Remera Rock",
+        "category": "remeras",
+        "stock": 100,
+        "price": 2590,
+        "img": ["/cardimg/Remeras/RemeraRock1.jpeg","/cardimg/Remeras/RemeraRock2.jpeg"],
+        "detail": "Musculosa con tira media polera. Talle único. Colores: Negro. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 24,
+        "name": "Vestido Camisero",
+        "category": "vestidos",
+        "stock": 100,
+        "price": 2590,
+        "img": ["/cardimg/Vestidos/VestidoCamisero1.jpeg","/cardimg/Vestidos/VestidoCamisero2.jpeg","/cardimg/Vestidos/VestidoCamisero3.jpeg"],
+        "detail": "Vestido camisero en lino estampado con lazo. Colores: terracota - beige - negro. Talle único. CONSULTAR DISPONIBILIDAD DE STOCK"
+    },
+    {
+        "id": 25,
+        "name": "Vestido Luna",
+        "category": "vestidos",
+        "stock": 100,
+        "price": 2590,
+        "img": ["/cardimg/Vestidos/VestidoLuna1.jpeg","/cardimg/Vestidos/VestidoLuna2.jpeg"],
+        "detail": "Vestido en lanilla. Talle único. Colores: Gris - Beige - verde. negro. CONSULTAR DISPONIBILIDAD"
+    },
+    {
+        "id": 26,
+        "name": "Vestido Vest",
+        "category": "vestidos",
+        "stock": 100,
+        "price": 2590,
+        "img": ["/cardimg/Vestidos/VestidoVest1.jpeg","/cardimg/Vestidos/VestidoVest2.jpeg","/cardimg/Vestidos/VestidoVest3.jpeg"],
+        "detail": "Vestido en lino, estampado. Talle único. Colores: Amarillo - Negro. CONSULTAR DISPONIBILIDAD"
+    }
+]   

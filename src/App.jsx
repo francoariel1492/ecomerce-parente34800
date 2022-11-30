@@ -1,14 +1,13 @@
-//------- Componentes
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import Header from "./components/Header/Header";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemDetailContainer from "./pages/ItemDetailContainer/ItemDetailContainer";
 import Cart from "./pages/Cart/Cart";
 import CartContextProvider from "./context/CartContext";
-//------- CSS
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-//------- Librerias
-import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
@@ -20,7 +19,7 @@ function App() {
           <Route path="/inicio" />
           <Route path="/detail/:productId" element={<ItemDetailContainer />} />
           <Route
-            path="/categoria/:categoriaId"
+            path="/category/:categoryId"
             element={<ItemListContainer />}
           />
           <Route path="/cart" element={<Cart />} />

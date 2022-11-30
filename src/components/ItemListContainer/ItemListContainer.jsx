@@ -1,44 +1,37 @@
-//------- Componentes
-import ItemList from "../ItemList/ItemList";
-//------- Hooks
 import { useState, useEffect } from "react";
-//------- Librerias
 import { useParams } from "react-router-dom";
 import { Spinner } from "react-bootstrap";
+import { collection,getDocs,getFirestore,query,where,} from "firebase/firestore";
 
-export let URL = "/productos.json";
+import ItemList from "../ItemList/ItemList";
+
+
 
 const ItemListContainer = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { categoriaId } = useParams();
+  const { categoryId } = useParams();
 
   useEffect(() => {
-    if (categoriaId) {
-      setTimeout(() => {
-        fetch(URL)
-          .then((res) => res.json())
-          .then((res) =>
-            setProducts(res.filter((prod) => prod.category === categoriaId))
-          )
-          .catch((err) => console.log(err))
-          .finally(() => setLoading(false));
-      }, 500);
-    } else {
-      setTimeout(() => {
-        fetch(URL)
-          .then((res) => res.json())
-          .then((resp) => setProducts(resp))
-          .catch((err) => console.log(err))
-          .finally(() => setLoading(false));
-      }, 500);
-    }
-  }, [categoriaId]);
-
+    const dbFirestore = getFirestore();
+    const queryCollection = collection(dbFirestore, "Productos");
+    let queryFilter = categoryId
+      ? query(queryCollection, where("category", "==", categoryId))
+      : queryCollection;
+    getDocs(queryFilter)
+      .then((resp) =>
+        setProducts(resp.docs.map((doc) => ({ id: doc.id, ...doc.data() })))
+      )
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
+  }, [categoryId]);
+  
   return loading ? (
-    <div className="d-flex justify-content-center "><Spinner/></div>
+    <div className="d-flex justify-content-center ">
+      <Spinner />
+    </div>
   ) : (
-    <div className="col text-center">
+    <div className="col text-center ">
       <ItemList products={products} />
     </div>
   );

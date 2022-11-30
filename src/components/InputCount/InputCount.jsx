@@ -2,6 +2,7 @@ import { Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const InputCount = () => {
+  
   return (
     <>
       <Link to="/cart">

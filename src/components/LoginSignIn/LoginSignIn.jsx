@@ -1,14 +1,14 @@
-//------- Componentes
-import CartWidget from "../CartWidget/CartWidget";
-
-//------- Librerias
 import { Container } from "react-bootstrap";
 import { FaFacebookF, FaInstagram, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useCartContext } from "../../context/CartContext";
 
+import CartWidget from "../CartWidget/CartWidget";
+
 const LoginSignIn = () => {
-  const { sumTotal, cantidadItems, cartList } = useCartContext();
+  
+  const { calcTotal, calcItemQuantity } = useCartContext();
+
   return (
     <Container className="d-flex flex-row align-items-center justify-content-between">
       <div className="d-flex align-items-center">
@@ -17,17 +17,15 @@ const LoginSignIn = () => {
       </div>
       <div className="d-flex align-items-center">
         <FaSearch />
-        {cartList != "" ? (
+        {calcItemQuantity() !== 0 && (
           <>
             <Link to="/cart">
               <CartWidget />
             </Link>
             <div className="px-2">
-              {cantidadItems} - ${sumTotal}
+              {calcItemQuantity()} - ${calcTotal()}
             </div>
           </>
-        ) : (
-          <></>
         )}
         <a href="https://facebook.com/morowa.indumentaria">
           <FaFacebookF />

@@ -1,41 +1,41 @@
-import InputCount from "../InputCount/InputCount";
-
 import { useState } from "react";
-
 import { Button } from "react-bootstrap";
 
-const Contador = ({ initial = 1, stock = 100, onAdd }) => {
-  const [cantidad, setCantidad] = useState(initial);
+import InputCount from "../InputCount/InputCount";
+
+const Counter = ({ initial = 1, stock = 100, onAdd }) => {
+  const [quantity, setQuantity] = useState(initial);
   const [bool, setBool] = useState(true);
-  const sumar = () => {
-    if (cantidad < stock) {
-      setCantidad(cantidad + 1);
+  const add = () => {
+    if (quantity < stock) {
+      setQuantity(quantity + 1);
     }
   };
 
-  const restar = () => {
-    if (cantidad > 1) {
-      setCantidad(cantidad - 1);
+  const subtract = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
     }
   };
 
-  const addCantidad = () => {
-    onAdd(cantidad);
+  const addquantity = () => {
+    onAdd(quantity);
     setBool(false);
   };
+  
   return (
     <div>
       {bool === true ? (
         <div>
-          <Button className="btn btn-dark btn-outline-light border-dark m-1" onClick={restar}>
+          <Button className="btn btn-dark btn-outline-light border-dark m-1" onClick={subtract}>
             -
           </Button>
-          <label>{cantidad}</label>
-          <Button className="btn btn-dark btn-outline-light border-dark m-1" onClick={sumar}>
+          <label>{quantity}</label>
+          <Button className="btn btn-dark btn-outline-light border-dark m-1" onClick={add}>
             +
           </Button>
           <br />
-          <Button className="btn btn-dark btn-outline-light border-dark m-1" onClick={addCantidad}>
+          <Button className="btn btn-dark btn-outline-light border-dark m-1" onClick={addquantity}>
             Agregar al carrito
           </Button>
         </div>
@@ -46,4 +46,4 @@ const Contador = ({ initial = 1, stock = 100, onAdd }) => {
   );
 };
 
-export default Contador;
+export default Counter;

@@ -6,54 +6,58 @@ export const useCartContext = () => useContext(CartContext);
 
 const CartContextProvider = ({ children }) => {
   const [cartList, setCartList] = useState([]);
-  const [sumTotal, setTotal] = useState(0);
-  const [cantidadItems, setQuantity] = useState(0);
+  const [order, setOrder] = useState(false);
+  const [orderId, setOrderId] = useState({});
+  const isInCart = (id) => cartList.findIndex((producto) => producto.id === id);
 
-  const agregarAlCarrito = (newProductCart) => {
-    if(!isInCart(newProductCart.id)){
-        setCartList([...cartList, newProductCart]);
-      }else{
-        let itemSelected = cartList.find(el => el.id === newProductCart.id)
-        itemSelected.cantidad += newProductCart.cantidad
-      }
+  const addToCart = (newProductCart) => {
+    setOrder(false);
+    let index = isInCart(newProductCart.id);
+    if (index === -1) {
+      setCartList([...cartList, newProductCart]);
+    } else {
+      cartList[index].quantity += newProductCart.quantity;
+      setCartList([...cartList]);
+    }
   };
 
-  const eliminarDelCarrito = (item)=>{
-    setQuantity(cantidadItems - item.cantidad)
-    setTotal(sumTotal - (item.cantidad * item.price))
-    setCartList(cartList.filter(el => el.id !== item.id))
-  }
-  
-  const calcularTotal = (newProductCart, cantidad) => {
-    setTotal(newProductCart.price * cantidad + sumTotal);
+  const removeFromCart = (id) => {
+    setCartList(cartList.filter((el) => el.id !== id));
   };
 
-  const calcularCantidadItems = (cantidad) => {
-    setQuantity(cantidad + cantidadItems);
+  const calcTotal = () => {
+    return cartList.reduce(
+      (sumPrecio, product) => (sumPrecio += product.quantity * product.price),
+      0
+    );
   };
 
-  const isInCart = (id) => {
-    return cartList.some(el => el.id === id)
-  }
+  const calcItemQuantity = () => {
+    return cartList.reduce((count, product) => (count += product.quantity), 0);
+  };
 
-  const borrarCarrito = () => {
+  const deleteCart = () => {
     setCartList([]);
-    setTotal(0);
-    setQuantity(0);
+  };
+
+  const showOrder = (id) => {
+    setOrder(true);
+    setOrderId(id);
   };
 
   return (
     <CartContext.Provider
       value={{
         cartList,
-        sumTotal,
-        cantidadItems,
+        order,
+        orderId,
         isInCart,
-        calcularTotal,
-        calcularCantidadItems,
-        agregarAlCarrito,
-        eliminarDelCarrito,
-        borrarCarrito,
+        calcTotal,
+        calcItemQuantity,
+        addToCart,
+        removeFromCart,
+        deleteCart,
+        showOrder,
       }}
     >
       {children}
