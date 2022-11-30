@@ -1,2 +1,2 @@
-# ecomerce-parente34800
-![](public/gif.gif)
+# Morowa Indumentaria - Proyecto Final de la comision 34800 de React JS
+
