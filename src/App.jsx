@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
@@ -11,7 +11,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <CartContextProvider>
         <Header />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
           <Route path="/cart" element={<Cart />} />
         </Routes>
       </CartContextProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
