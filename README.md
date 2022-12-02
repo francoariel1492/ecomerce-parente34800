@@ -2,7 +2,7 @@
 
 Elegi crear una app/ecomerce con React Js de indumentaria femenina para unos amigos de Mendoza, Rivadavia
 
-# (morowaindumentaria.netlify.app)
+# morowaindumentaria.netlify.app
 
 | Dependecias | Uso |
 | ------ | ------ |
