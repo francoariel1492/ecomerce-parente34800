@@ -1,6 +1,6 @@
 # Morowa Indumentaria - Proyecto Final de la comision 34800 de React JS
 
-<h2>morowaindumentaria.netlify.app</h2>
+morowaindumentaria.netlify.app
 
 Elegi crear una app/ecomerce con React Js de indumentaria femenina para unos amigos de Mendoza, Rivadavia
 
